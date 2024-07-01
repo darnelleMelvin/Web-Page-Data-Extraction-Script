@@ -4,9 +4,9 @@ This Python script reads a list of URLs from a spreadsheet, fetches the source c
 Before you run the script, ensure you have the following installed:
 
 * Python 3.x
-* _pandas_ library
-* requests library
-* openpyxl library
+* __`pandas`__ library
+* __`requests`__ library
+* __`openpyxl`__ library
 
 You can install the required libraries using pip:
 ~~~~

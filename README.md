@@ -12,3 +12,13 @@ You can install the required libraries using pip:
 ~~~~
 pip install pandas requests openpyxl
 ~~~~
+## Script Explanation
+The script performs the following steps:
+
+1. Read URLs from the spreadsheet: It uses the pandas library to read URLs from the specified Excel file.
+2. Fetch the web pages: It uses the requests library to retrieve the source code of each URL.
+3. Extract data using regex: It uses the re library to find all matches in the source code based on the provided regex pattern.
+4. Write the extracted data to a new spreadsheet: It uses the pandas library to write the results to a new Excel file.
+
+## License
+Source code is made available under the [BSD 3-Clause License](LICENSE). For questions, contact [Darnelle Melvin](https://github.com/darnelleMelvin).

@@ -10,14 +10,14 @@ import requests
 import re
 
 # Read URLs from the spreadsheet
-df = pd.read_excel('C:/Users/dmelvin/Documents/jackentratter.xlsx')  # Adjust the file path and sheet name as needed
-urls = df['Link']  # Adjust the column name if needed
+df = pd.read_excel('urls.xlsx')  # Adjust the file path and sheet name as needed
+urls = df['URL']  # Adjust the column name if needed
 
 # Prepare a list to hold the extracted data
 extracted_data = []
 
 # Define your regex pattern
-pattern = re.compile(r'\<a\shref\=\"(\/ark.*)\"\srel\=\"bookmark\"\>')  # Replace with your actual regex pattern
+pattern = re.compile(r'your_regex_pattern')  # Replace with your actual regex pattern
 
 for url in urls:
     try:
@@ -37,9 +37,9 @@ for url in urls:
         print(f"Error fetching {url}: {e}")
 
 # Convert the extracted data to a DataFrame
-result_df = pd.DataFrame(extracted_data, columns=['Link', 'Match'])
+result_df = pd.DataFrame(extracted_data, columns=['URL', 'Match'])
 
 # Write the results to a new spreadsheet
-result_df.to_excel('C:/Users/dmelvin/Documents/generateArk/extracted_data001.xlsx', index=False)  # Adjust the file path as needed
+result_df.to_excel('extracted_data.xlsx', index=False)  # Adjust the file path as needed
 
-print("Data extraction complete. Check 'extracted_data001.xlsx' for the results.")
+print("Data extraction complete. Check 'extracted_data.xlsx' for the results.")

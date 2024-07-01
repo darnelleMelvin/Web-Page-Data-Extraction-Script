@@ -20,5 +20,9 @@ The script performs the following steps:
 3. Extract data using regex: It uses the re library to find all matches in the source code based on the provided regex pattern.
 4. Write the extracted data to a new spreadsheet: It uses the pandas library to write the results to a new Excel file.
 
+## Customization
+* Regex Pattern: Update the pattern variable with your desired regex pattern to extract specific data from the web pages.
+* Input/Output Files: Adjust the file paths and names for the input (urls.xlsx) and output (extracted_data.xlsx) files as needed.
+
 ## License
 Source code is made available under the [BSD 3-Clause License](LICENSE). For questions, contact [Darnelle Melvin](https://github.com/darnelleMelvin).

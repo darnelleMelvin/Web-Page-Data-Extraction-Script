@@ -15,14 +15,17 @@ pip install pandas requests openpyxl
 ## Script Explanation
 The script performs the following steps:
 
-1. Read URLs from the spreadsheet: It uses the pandas library to read URLs from the specified Excel file.
-2. Fetch the web pages: It uses the requests library to retrieve the source code of each URL.
-3. Extract data using regex: It uses the re library to find all matches in the source code based on the provided regex pattern.
-4. Write the extracted data to a new spreadsheet: It uses the pandas library to write the results to a new Excel file.
+1. __Read URLs from the spreadsheet__: It uses the __`pandas`__ library to read URLs from the specified Excel file.
+2. __Fetch the web pages__: It uses the __`requests`__ library to retrieve the source code of each URL.
+3. __Extract data using regex__: It uses the __`re`__ library to find all matches in the source code based on the provided regex pattern.
+4. __Write the extracted data to a new spreadsheet__: It uses the __`pandas`__ library to write the results to a new Excel file.
 
 ## Customization
-* Regex Pattern: Update the pattern variable with your desired regex pattern to extract specific data from the web pages.
-* Input/Output Files: Adjust the file paths and names for the input (urls.xlsx) and output (extracted_data.xlsx) files as needed.
+* __Regex Pattern__: Update the __`pattern`__ variable with your desired regex pattern to extract specific data from the web pages.
+* __Input/Output Files__: Adjust the file paths and names for the input (__`urls.xlsx`__) and output (__`extracted_data.xlsx`__) files as needed.
+
+## Contact
+If you encounter any issues or have questions, feel free to open an issue or contact contact [Darnelle Melvin](https://github.com/darnelleMelvin).
 
 ## License
-Source code is made available under the [BSD 3-Clause License](LICENSE). For questions, contact [Darnelle Melvin](https://github.com/darnelleMelvin).
+Source code is made available under the [BSD 3-Clause License](LICENSE).
